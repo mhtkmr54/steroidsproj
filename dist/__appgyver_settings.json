@@ -18,9 +18,9 @@
     },
     {
       "position": 1,
-      "id": "settings",
-      "title": "Settings",
-      "target_url": "http://localhost/app/example/settings.html"
+      "id": "geolocation",
+      "title": "Geolocation",
+      "target_url": "http://localhost/app/geolocation/index.html"
     },
     {
       "position": 2,

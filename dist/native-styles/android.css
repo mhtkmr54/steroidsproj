@@ -4,10 +4,7 @@
  ***********************************************************/
 
 navigation-bar {
-  background-color: #00B5FF;
-  color: #ffffff;
-  padding-left: 6px;
-  padding-right: 6px;
+  background-color: #27ae60;
 }
 
 navigation-bar title {
@@ -60,7 +57,7 @@ tab-bar tab-bar-item marker-top:selected {
   background-color: #1596f7;
 }
 
-tab-bar-item#settings {
+tab-bar-item#geolocation {
   background-image: url(icons/cog.svg);
 }
 

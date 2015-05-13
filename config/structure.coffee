@@ -10,10 +10,10 @@ module.exports =
       location: "example#getting-started" # Supersonic module#view type navigation
     }
     {
-      title: "Settings"
-      id: "settings"
-      location: "example#settings"
-    }
+    title: "Geolocation"
+    id: "geolocation"
+    location: "geolocation#index"
+     }
     {
       title: "Internet"
       id: "internet"
