@@ -65,6 +65,11 @@ tab-bar-item#index {
   background-image: url(icons/home.svg);
 }
 
+
+tab-bar-item#CRUD {
+  background-image: url(icons/home.svg);
+}
+
 tab-bar-item#internet {
   background-image: url(icons/search.svg);
 }

@@ -1,16 +1,37 @@
 {
-  "tabs": [],
-  "rootView": {
-    "location": "brewery#index",
-    "preloads": [
-      {
-        "id": "learn-more",
-        "location": "example#learn-more"
-      },
-      {
-        "id": "using-the-scanner",
-        "location": "example#using-the-scanner"
-      }
-    ]
-  }
+  "preloads": [
+    {
+      "id": "learn-more",
+      "location": "http://localhost/app/example/learn-more.html"
+    },
+    {
+      "id": "using-the-scanner",
+      "location": "http://localhost/app/example/using-the-scanner.html"
+    }
+  ],
+  "tabs": [
+    {
+      "position": 0,
+      "id": "index",
+      "title": "Index",
+      "target_url": "http://localhost/app/example/getting-started.html"
+    },
+    {
+      "position": 1,
+      "id": "geolocation",
+      "title": "Geolocation",
+      "target_url": "http://localhost/app/geolocation/index.html"
+    },
+    {
+      "position": 2,
+      "id": "internet",
+      "title": "Internet",
+      "target_url": "http://google.com"
+    },
+    {
+      "position": 3,
+      "id": "CRUD",
+      "target_url": "http://localhost/app/brewery/index.html"
+    }
+  ]
 }
