@@ -3,26 +3,31 @@
 module.exports =
 
   # See styling options for tabs and other native components in app/common/native-styles/ios.css or app/common/native-styles/android.css
-  tabs: [
-    {
-      title: "Index"
-      id: "index"
-      location: "example#getting-started" # Supersonic module#view type navigation
-    }
-    {
-    title: "Geolocation"
-    id: "geolocation"
-    location: "geolocation#index"
-     }
-    {
-      title: "Internet"
-      id: "internet"
-      location: "http://google.com" # URLs are supported!
-    }
-  ]
+ 
 
-  # rootView:
-  #   location: "example#getting-started"
+  
+   rootView:
+     location: "brewery#index"
+
+  tabs: [
+  {
+    title: "Index"
+    id: "index"
+    location: "example#getting-started"
+  }
+  {
+    title: "Geolocation"
+    id: "geolocation"`
+    location: "geolocation#index"
+  }
+  {
+    title: "Internet"
+    id: "internet"
+    location: "http://google.com"
+  }
+        ]
+
+
 
   preloads: [
     {
@@ -34,6 +39,8 @@ module.exports =
       location: "example#using-the-scanner"
     }
   ]
+
+
 
   # drawers:
   #   left:
