@@ -32,6 +32,12 @@
       "position": 3,
       "id": "CRUD",
       "target_url": "http://localhost/app/brewery/index.html"
+    },
+    {
+      "position": 4,
+      "id": "googlemaps",
+      "title": "googlemaps",
+      "target_url": "http://localhost/app/googlemaps/index.html"
     }
   ]
 }

@@ -24,6 +24,11 @@ module.exports =
      id:"CRUD"
      location: "brewery#index"
     }
+    {
+    title: "googlemaps"
+    id: "googlemaps"
+    location: "googlemaps#index"
+    }
   ]
 
    #rootView:
