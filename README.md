@@ -1,4 +1,4 @@
-# steroidsproj
+# cordovaproj
 Hybrid app under supersonic framework
 Use monaco debugger 
 
