@@ -27,26 +27,47 @@
         $scope.map;
         $scope.markers = [];
         $scope.markerId = 1;
+        var start=new google.maps.LatLng(12.9915, 80.2336);
+        var directionsDisplay;
+         var directionsService = new google.maps.DirectionsService();
+        
 
         //Map initialization  
         $timeout(function(){
-
-            var latlng = new google.maps.LatLng(12.9915, 80.2336);
+            if(navigator.geolocation){navigator.geolocation.getCurrentPosition(function(position) {
+      start = new google.maps.LatLng(position.coords.latitude,
+                                       position.coords.longitude);})}
+             directionsDisplay = new google.maps.DirectionsRenderer();
+            var latlng = start;
             var myOptions = {
                 zoom: 15,
                 center: latlng,
                 mapTypeId: google.maps.MapTypeId.ROADMAP
             };
-            $scope.map = new google.maps.Map(document.getElementById("map_canvas"), myOptions); 
-            $scope.overlay = new google.maps.OverlayView();
-            $scope.overlay.draw = function() {}; // empty function required
-            $scope.overlay.setMap($scope.map);
+
+            map = new google.maps.Map(document.getElementById('map_canvas'), myOptions);
+            directionsDisplay.setMap(map);
             $scope.element = document.getElementById('map_canvas');
             $scope.hammertime = Hammer($scope.element).on("hold", function(event) {
                 $scope.addOnClick(event);
             });
 
         },100);
+        //Directions api
+        $scope.calcRoute=function () {
+        var end=document.getElementById('search').value;
+         var request = {
+              origin:start,
+              destination:end,
+              travelMode: google.maps.TravelMode.DRIVING
+           };
+         directionsService.route(request, function(response, status) {
+            if (status == google.maps.DirectionsStatus.OK) {
+              directionsDisplay.setDirections(response);
+               }
+         });
+           } 
+
 
         //Delete all Markers
         $scope.deleteAllMarkers = function(){

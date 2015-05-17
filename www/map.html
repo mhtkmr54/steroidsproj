@@ -10,14 +10,14 @@
         <div id="map_canvas"></div>
 
         <p class="par-search">
-            <input type="search" class="search-input search-input-map">
+            <input type="search" id="search" class="search-input search-input-map">
         </p>
 
         <p class="par-buttons" >
-            <ons-button  class="btn-delete" ng-click="deleteAllMarkers()">
+            <ons-button  class="btn-delete" ng-click="calcRoute()">
                 Delete all markers        
             </ons-button>
-            <ons-button class="btn-distance" ng-click="calculateDistance()">
+            <ons-button class="btn-distance" ng-click="calcRoute()">
                 Distance      
             </ons-button>
         </p>   
