@@ -1,0 +1,21 @@
+{
+    "plugins": [
+        "mobi.monaca.plugins.Monaca",
+        "org.apache.cordova.splashscreen"
+    ],
+    "framework_version": "3.5",
+    "xcode_version": "6",
+    "cordova_version": "4.1",
+    "plugin_settings": [],
+    "title-ja": "",
+    "title-en": "cordova-project",
+    "description-ja": "",
+    "description-en": "shaastra",
+    "category": "User Template",
+    "platform": [
+        "android",
+        "ios",
+        "winrt"
+    ],
+    "name": "generated-1431879781-5558a6527e2193222b5877a3"
+}
